@@ -1,0 +1,32 @@
+Subject: Modernisez le site web de {{nom_association}}
+
+Bonjour,
+
+Je suis {{prenom}} {{nom}}, développeur web spécialisé dans la création de sites pour les associations.
+
+J'ai remarqué que {{nom_association}} mène des actions importantes dans le domaine {{secteur_detecte}} dans le {{departement}}. 
+
+**Pourquoi un nouveau site web ?**
+✓ Site moderne et responsive (mobile/tablette)
+✓ Conforme aux normes d'accessibilité RGAA
+✓ Optimisé pour Google (SEO)
+✓ Gestion facile des contenus
+✓ Sécurisé (HTTPS, sauvegardes)
+
+**Mon offre pour les associations :**
+• Site vitrine complet : à partir de 400€
+• Formulaire de contact et adhésion
+• Galerie photos/événements
+• Formation à la gestion du site
+• 1 an de maintenance incluse
+
+**Exemples récents :** [lien portfolio]
+
+Puis-je vous envoyer une proposition personnalisée pour {{nom_association}} ?
+
+Cordialement,
+{{prenom}} {{nom}}
+{{telephone}} | {{email}}
+
+---
+P.S: Réponse rapide sous 24h. Devis gratuit et sans engagement.

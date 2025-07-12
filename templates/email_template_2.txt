@@ -1,0 +1,31 @@
+Subject: [SUIVI] Site web pour {{nom_association}} - Réduction de lancement
+
+Bonjour,
+
+J'espère que vous allez bien. Je reviens vers vous concernant la modernisation du site web de {{nom_association}}.
+
+**Offre spéciale pour les associations du {{departement}} :**
+🎯 Site web complet : 350€ au lieu de 400€ (jusqu'au {{date_limite}})
+🎯 Mise en ligne en 10 jours
+🎯 Formation personnalisée incluse
+
+**Ce qui est inclus :**
+• Design moderne et professionnel
+• Compatible tous appareils
+• Hébergement sécurisé 1 an
+• Référencement Google de base
+• Maintenance technique
+
+**Pourquoi maintenant ?**
+Plus de 80% des visiteurs consultent les sites sur mobile. Un site obsolète peut faire perdre des adhérents ou des dons.
+
+Souhaitez-vous que je prépare une maquette gratuite pour {{nom_association}} ?
+
+Réponse attendue avant le {{date_limite}} pour bénéficier de cette réduction.
+
+Cordialement,
+{{prenom}} {{nom}}
+{{telephone}} | {{email}}
+
+---
+Si ce message ne vous intéresse pas, répondez "STOP" et je ne vous recontacterai plus.
