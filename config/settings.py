@@ -35,6 +35,10 @@ PRIORITY_REGIONS = [
 EMAIL_PROVIDER = "sendgrid"  # ou "sendinblue"
 DAILY_EMAIL_LIMIT = 300
 
+# Google Sheets settings
+GOOGLE_SHEETS_ENABLED = True
+GOOGLE_CREDENTIALS_FILE = "config/google_credentials.json"
+
 # Paths
 DATA_DIR = "data"
 OUTPUT_DIR = "output"

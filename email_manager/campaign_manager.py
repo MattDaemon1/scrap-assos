@@ -8,12 +8,15 @@ import os
 import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from utils.data_manager import DataManager
+from utils.google_sheets_manager import GoogleSheetsManager
 from config.settings import *
 
 class EmailCampaignManager:
-    def __init__(self):
+    def __init__(self, use_google_sheets=True):
         self.data_manager = DataManager()
         self.templates = self.load_templates()
+        self.use_google_sheets = use_google_sheets
+        self.gs_manager = GoogleSheetsManager() if use_google_sheets else None
         
     def load_templates(self):
         """Charger les templates d'email"""
@@ -196,6 +199,60 @@ max_retries = 3
         
         print(f"Fichier de configuration créé: {config_path}")
         print("IMPORTANT: Modifiez ce fichier avec vos vraies informations avant d'envoyer des emails")
+    
+    def sync_to_google_sheets(self, campaign_plan, sheet_url=None):
+        """Synchroniser le plan de campagne avec Google Sheets"""
+        if not self.use_google_sheets or not self.gs_manager:
+            print("⚠️  Google Sheets non configuré")
+            return False
+        
+        try:
+            # Se connecter à la feuille ou en créer une nouvelle
+            if sheet_url:
+                if not self.gs_manager.connect_to_sheet(sheet_url):
+                    return False
+            else:
+                sheet_url = self.gs_manager.create_leads_sheet(f"Campagne {datetime.now().strftime('%Y%m%d')}")
+                if not sheet_url:
+                    return False
+            
+            # Préparer les données pour Google Sheets
+            leads_data = []
+            for item in campaign_plan:
+                prospect = item['prospect']
+                leads_data.append({
+                    'Nom': prospect.get('Nom', prospect.get('name', '')),
+                    'Email': prospect.get('Email', prospect.get('email', '')),
+                    'Adresse': prospect.get('Adresse', prospect.get('address', '')),
+                    'Département': prospect.get('Département', prospect.get('department', '')),
+                    'Secteur_Detecte': prospect.get('Secteur_Detecte', prospect.get('sector', '')),
+                    'Description': prospect.get('Description', prospect.get('description', '')),
+                    'needs_website': True,  # Tous les prospects dans la campagne ont besoin d'un site
+                    'website_quality': prospect.get('website_quality', 'poor')
+                })
+            
+            # Ajouter à Google Sheets
+            if self.gs_manager.add_leads(leads_data):
+                print(f"✅ {len(leads_data)} prospects synchronisés avec Google Sheets")
+                print(f"🔗 URL: {sheet_url}")
+                return sheet_url
+            
+        except Exception as e:
+            print(f"❌ Erreur synchronisation Google Sheets: {e}")
+            return False
+    
+    def update_contact_status_in_sheets(self, email, status, template_used=None, response=None, notes=None):
+        """Mettre à jour le statut de contact dans Google Sheets"""
+        if not self.use_google_sheets or not self.gs_manager:
+            return False
+        
+        return self.gs_manager.update_contact_status(
+            email=email,
+            status=status,
+            template_used=template_used,
+            response=response,
+            notes=notes
+        )
 
 def main():
     manager = EmailCampaignManager()

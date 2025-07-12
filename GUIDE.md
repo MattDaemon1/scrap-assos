@@ -10,6 +10,7 @@ pip install -r requirements.txt
 ### 2. Configuration
 1. Copiez `.env.example` vers `.env` et remplissez vos clés API
 2. Modifiez `config/settings.py` pour ajuster les critères de ciblage
+3. Configurez Google Sheets : `python setup_google_sheets.py`
 
 ### 3. Utilisation
 
@@ -197,3 +198,53 @@ python -c "from config.settings import *; print(f'Secteurs: {len(TARGET_SECTORS)
 # Test de connectivité
 python -c "import requests; print('OK' if requests.get('https://httpbin.org/status/200').status_code == 200 else 'ERREUR')"
 ```
+
+## Configuration Google Sheets
+
+### Étapes de configuration:
+
+1. **Créer un projet Google Cloud**
+   ```bash
+   # Lancer le configurateur
+   python setup_google_sheets.py
+   ```
+
+2. **Suivre les instructions affichées** :
+   - Aller sur https://console.cloud.google.com/
+   - Créer ou sélectionner un projet
+   - Activer les APIs Google Sheets et Google Drive
+   - Créer un compte de service
+   - Télécharger les credentials JSON
+
+3. **Placer le fichier credentials** :
+   - Renommer en `google_credentials.json`
+   - Placer dans `config/google_credentials.json`
+
+4. **Tester la configuration** :
+   ```bash
+   python setup_google_sheets.py --test
+   ```
+
+### Avantages Google Sheets vs CSV :
+
+✅ **Collaboration en temps réel**  
+✅ **Historique des modifications**  
+✅ **Accès depuis mobile/web**  
+✅ **Formules et graphiques automatiques**  
+✅ **Partage sécurisé avec l'équipe**  
+✅ **Backup automatique Google**  
+
+### Structure de la feuille créée :
+
+| Colonne | Description |
+|---------|-------------|
+| Nom Association | Nom de l'association |
+| Email | Email principal |
+| Département | Code département (18, 37, etc.) |
+| Secteur | Secteur détecté (formation, culture, etc.) |
+| Statut Contact | Nouveau, Contacté, Répondu, Converti |
+| Date Premier Contact | Date du premier email envoyé |
+| Template Utilisé | Numéro du template utilisé |
+| Réponse | Réponse reçue (Oui/Non/Objection) |
+| Notes | Notes personnalisées |
+| Score Priorité | Score de 1 à 10 |

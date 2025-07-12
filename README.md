@@ -2,6 +2,31 @@
 
 Système automatisé de prospection d'associations françaises pour la création de sites web.
 
+## Fonctionnalités
+
+✅ **Scraping intelligent** des associations (Journal Officiel, HelloAsso)  
+✅ **Analyse automatique** des sites web existants  
+✅ **Génération de prospects qualifiés**  
+✅ **Campagnes email personnalisées**  
+✅ **Intégration Google Sheets** pour le suivi  
+✅ **Templates email professionnels**  
+
+## Installation rapide
+
+```bash
+# 1. Installer les dépendances
+pip install -r requirements.txt
+
+# 2. Configurer Google Sheets
+python setup_google_sheets.py
+
+# 3. Personnaliser vos informations
+# Éditez config/sender_config.txt avec vos coordonnées
+
+# 4. Lancer le générateur
+python main.py
+```
+
 ## Objectif
 Cibler des associations ayant :
 - Budget annuel : 10 000 € - 100 000 €
@@ -14,24 +39,22 @@ Cibler des associations ayant :
 ```
 ├── scrapers/           # Scripts de scraping
 ├── analyzers/          # Analyse des sites web
-├── data/              # Stockage des données
-├── templates/         # Templates d'emails
-├── config/            # Configuration
-└── utils/             # Utilitaires
+├── email_manager/      # Gestion des campagnes
+├── utils/              # Google Sheets + utilitaires
+├── config/             # Configuration
+├── templates/          # Templates d'emails
+└── tests/              # Suite de tests
 ```
 
-## Installation
-```bash
-pip install -r requirements.txt
-```
+## Workflow automatisé
 
-## Utilisation
-1. Configuration : `python config/setup.py`
-2. Scraping : `python scrapers/journal_officiel_scraper.py`
-3. Analyse : `python analyzers/website_analyzer.py`
-4. Export : `python utils/export_leads.py`
+1. **Scraping** : Extraction associations par département
+2. **Analyse** : Vérification qualité sites web
+3. **Qualification** : Export prospects avec besoin
+4. **Campagne** : Envoi emails personnalisés
+5. **Suivi** : Synchronisation Google Sheets
 
 ## Objectif mensuel
-- 50 contacts scrapés/semaine
-- 100 emails envoyés/semaine  
-- 2-3 contrats/mois à 400€ = 800-1200€/mois
+- 200-300 prospects scrapés
+- 100-150 prospects qualifiés  
+- 2-3 contrats/mois à 400€ = **800-1200€/mois**

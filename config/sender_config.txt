@@ -1,0 +1,30 @@
+# Configuration de l'expéditeur
+# Modifiez ces informations avant d'utiliser le système d'envoi
+
+[SENDER_INFO]
+prenom = Matthieu
+nom = ALLART
+telephone = 07.82.90.15.35
+email = matthieu@mattkonnect.com
+
+[EMAIL_SMTP]
+# Configuration pour votre serveur SMTP
+smtp_server = mail.mattkonnect.com
+smtp_port = 465
+email_password = Maboule35!
+use_ssl = true
+
+# Pour Gmail (alternative)
+# smtp_server = smtp.gmail.com
+# smtp_port = 587
+# use_ssl = false
+
+# Pour Outlook/Hotmail (alternative)
+# smtp_server = smtp-mail.outlook.com
+# smtp_port = 587
+# use_ssl = false
+
+[CAMPAIGN_SETTINGS]
+daily_limit = 50
+delay_between_emails = 30
+max_retries = 3
