@@ -8,3 +8,7 @@ sendgrid==6.10.0
 webdriver-manager==4.0.1
 lxml==4.9.3
 tqdm==4.66.1
+
+# Tests et développement
+unittest2==1.1.0
+coverage==7.3.2

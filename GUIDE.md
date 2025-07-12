@@ -148,3 +148,52 @@ python email_manager/campaign_manager.py
 
 ### Contact:
 Pour toute question ou amélioration, documentez dans le fichier `issues.md`
+
+## Tests et validation
+
+### Exécuter les tests
+```bash
+# Tests manuels rapides (sans dépendances externes)
+python tests/manual_tests.py
+
+# Tests complets avec mocks
+python tests/run_tests.py
+
+# Test spécifique
+python tests/run_tests.py --test test_data_manager.TestDataManager.test_save_and_load_csv
+
+# Tests avec couverture de code
+python tests/run_tests.py --coverage
+```
+
+### Types de tests disponibles
+
+#### 1. Tests manuels (`manual_tests.py`)
+- ✅ Vérification des imports
+- ✅ Validation de la configuration  
+- ✅ Test des fonctions de base
+- ✅ Pas de dépendances externes
+
+#### 2. Tests unitaires
+- **`test_data_manager.py`** : Gestion des données CSV
+- **`test_scraper.py`** : Extraction et filtrage
+- **`test_website_analyzer.py`** : Analyse de sites web
+- **`test_email_manager.py`** : Génération de campagnes
+- **`test_integration.py`** : Workflow complet
+
+### Résultats attendus
+- **Taux de réussite** : > 90%
+- **Couverture de code** : > 80%
+- **Performance** : < 5s pour 1000 associations
+
+### Debugging et résolution
+```bash
+# Analyser un test qui échoue
+python -m unittest tests.test_data_manager.TestDataManager.test_save_and_load_csv -v
+
+# Vérifier la configuration
+python -c "from config.settings import *; print(f'Secteurs: {len(TARGET_SECTORS)}, Régions: {len(PRIORITY_REGIONS)}')"
+
+# Test de connectivité
+python -c "import requests; print('OK' if requests.get('https://httpbin.org/status/200').status_code == 200 else 'ERREUR')"
+```

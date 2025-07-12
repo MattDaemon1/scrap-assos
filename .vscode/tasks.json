@@ -11,6 +11,61 @@
 			"group": "build",
 			"isBackground": false,
 			"problemMatcher": []
+		},
+		{
+			"label": "Tests manuels rapides",
+			"type": "shell",
+			"command": "python",
+			"args": [
+				"tests/manual_tests.py"
+			],
+			"group": "test",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Tests complets",
+			"type": "shell",
+			"command": "python",
+			"args": [
+				"tests/run_tests.py"
+			],
+			"group": "test",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Scraper associations",
+			"type": "shell",
+			"command": "python",
+			"args": [
+				"scrapers/journal_officiel_scraper.py"
+			],
+			"group": "build",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Analyser sites web",
+			"type": "shell",
+			"command": "python",
+			"args": [
+				"analyzers/website_analyzer.py"
+			],
+			"group": "build",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Créer campagne email",
+			"type": "shell",
+			"command": "python",
+			"args": [
+				"email_manager/campaign_manager.py"
+			],
+			"group": "build",
+			"isBackground": false,
+			"problemMatcher": []
 		}
 	]
 }

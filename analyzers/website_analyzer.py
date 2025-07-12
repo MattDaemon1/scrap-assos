@@ -144,10 +144,17 @@ class WebsiteAnalyzer:
         name = association.get('name', '').lower()
         urls = []
         
+        if not name or name.strip() == '':
+            return ['example-association.fr']  # URL par défaut si nom vide
+        
         # Nettoyer le nom
         import re
         clean_name = re.sub(r'[^a-z0-9\s]', '', name)
         clean_name = re.sub(r'\s+', '-', clean_name.strip())
+        
+        # Vérifier que le nom nettoyé n'est pas vide
+        if not clean_name or clean_name == '-':
+            clean_name = 'association'
         
         # Patterns d'URL courantes
         patterns = [
@@ -156,11 +163,12 @@ class WebsiteAnalyzer:
             f"{clean_name}.asso.fr",
             f"www.{clean_name}.fr",
             f"asso-{clean_name}.fr",
-            f"{clean_name.replace('-', '')}.fr"
+            f"{clean_name.replace('-', '')}.fr" if '-' in clean_name else f"{clean_name}asso.fr"
         ]
         
-        # Limiter à 5 tentatives max
-        return patterns[:5]
+        # Filtrer les URLs vides et limiter à 5 tentatives max
+        valid_patterns = [p for p in patterns if p and len(p) > 4]  # Au moins 'x.fr'
+        return valid_patterns[:5]
     
     def batch_analyze(self, csv_filename):
         """Analyser en lot depuis un fichier CSV"""
