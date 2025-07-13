@@ -49,7 +49,7 @@ def check_imports():
         from analyzers.website_analyzer import WebsiteAnalyzer
         print("✅ analyzers.website_analyzer")
         
-        from email_manager.campaign_manager import CampaignManager
+        from email_manager.campaign_manager import EmailCampaignManager
         print("✅ email_manager.campaign_manager")
         
         from utils.data_manager import DataManager
@@ -94,7 +94,7 @@ def check_google_sheets():
     """Vérification de Google Sheets"""
     print("\n📊 Vérification Google Sheets...")
     
-    if Path("google_credentials.json").exists():
+    if Path("config/google_credentials.json").exists():
         print("✅ Fichier credentials présent")
         try:
             from utils.google_sheets_manager import GoogleSheetsManager
@@ -105,7 +105,7 @@ def check_google_sheets():
             print(f"⚠️ Erreur Google Sheets: {e}")
             return False
     else:
-        print("⚠️ Fichier google_credentials.json manquant")
+        print("⚠️ Fichier config/google_credentials.json manquant")
         print("   Exécutez: python setup_google_sheets.py")
         return False
 
