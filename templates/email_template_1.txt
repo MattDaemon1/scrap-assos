@@ -4,21 +4,24 @@ Bonjour {{prenom_contact}},
 
 Je me permets de vous écrire car j'ai découvert les actions de {{nom_association}} dans le domaine {{secteur_detecte}} dans le {{departement}}. Félicitations pour votre engagement !
 
-👉 Mais votre site reflète-t-il vraiment la qualité de votre travail ?
+👉 Mais votre site reflète-t-il vraiment la qualité de votre engagement ?
 
 Aujourd’hui, un site web moderne et bien conçu peut :
 ✅ Mieux valoriser vos actions et projets
 ✅ Attirer plus d'adhérents et de partenaires
 ✅ Faciliter la gestion des événements et des contacts
+✅ Être accessible sur tous les appareils (mobile, tablette, ordinateur)
 
 Ce que je propose pour les associations comme la vôtre :
-🔹 Site vitrine clé en main à partir de 400€
+🔹 Site vitrine clé en main 
 🔹 Design moderne, responsive (mobile/tablette)
 🔹 Accessible RGAA, optimisé SEO
 🔹 Formulaires d’adhésion et contact intégrés
 🔹 Formation offerte pour gérer votre site + 1 an de maintenance inclus
 
-🎯 Des exemples concrets ? [Lien portfolio]
+Prix attractif pour les associations !
+
+🎯 Plus d'infos ? mattkonnect.com
 
 Si cela vous intéresse, je peux vous préparer une proposition personnalisée, sans engagement.
 
@@ -28,5 +31,6 @@ Au plaisir d’échanger,
 
 {{prenom}} {{nom}}
 {{telephone}} | {{email}}
+{{site_web}}
 
 P.S. Réponse garantie sous 24h. Devis gratuit, sans engagement.

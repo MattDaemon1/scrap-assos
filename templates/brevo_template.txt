@@ -1,0 +1,32 @@
+Objet: Et si {{ contact.ASSOCIATION }} avait un site web à son image ?
+
+Bonjour,
+
+Je me permets de vous contacter concernant {{ contact.ASSOCIATION }}, association {{ contact.TYPE_ASSOCIATION }} basée à {{ contact.VILLE }}.
+
+👉 Votre association mérite-t-elle un site web moderne ?
+
+En tant que spécialiste du web pour les associations de l'Ain, je propose :
+
+🔹 Site vitrine clé en main dès 400€
+🔹 Design responsive et professionnel  
+🔹 Formulaires d'adhésion intégrés
+🔹 Formation + 1 an de maintenance inclus
+
+{{ contact.TYPE_ASSOCIATION == "CHASSE" }}
+Idéal pour présenter vos territoires, calendrier des battues et adhésions.
+{{ contact.TYPE_ASSOCIATION == "PECHE" }}  
+Parfait pour vos parcours de pêche, réglementation et cartes.
+{{ contact.TYPE_ASSOCIATION == "SPORT" }}
+Excellent pour calendrier, résultats et inscriptions.
+{{ /contact.TYPE_ASSOCIATION }}
+
+Une discussion de 15 minutes vous intéresse ?
+Répondez simplement ou appelez-moi au 07.82.90.15.35
+
+Cordialement,
+Matthieu ALLART
+Développeur Web - MattKonnect
+https://mattkonnect.com
+
+P.S. Devis gratuit, sans engagement.

@@ -10,13 +10,13 @@ En discutant récemment avec d'autres associations du {{departement}}, un consta
 
 C’est justement pour ça que je propose en ce moment une offre spéciale réservée aux associations locales :
 
-🎯 Site vitrine clé en main à 350€ (au lieu de 400€)
-👉 Mise en ligne en 10 jours
+🎯 Site vitrine clé en main avec 15% de réduction avant {{date_limite}}
+👉 Mise en ligne rapide (sous condition)
 👉 Formation personnalisée incluse
 
 Ce que j’intègre pour {{nom_association}} :
 
-Design sur mesure qui reflète vos valeurs
+Design qui reflète vos valeurs
 
 Compatible mobile et tablette (80% des visiteurs !)
 
@@ -26,6 +26,8 @@ Référencement Google pour être mieux trouvé localement
 
 Maintenance technique pendant 12 mois
 
+Analytics pour suivre vos visiteurs
+
 Et surtout :
 ➡️ Maquette personnalisée gratuite avant engagement, pour que vous puissiez vous projeter.
 
@@ -34,5 +36,6 @@ Si cela vous intéresse, il suffit de me répondre avant le {{date_limite}} pour
 Au plaisir d’échanger,
 {{prenom}} {{nom}}
 {{telephone}} | {{email}}
+{{site_web}}
 
-P.S. Si vous avez déjà refait votre site récemment ou si ce message ne vous concerne pas, un simple « STOP » et je ne vous relancerai plus.
+P.S. Si vous avez déjà refait votre site récemment et que je peux vous accompagner d’une autre manière, n’hésitez pas à me le dire. Je suis là pour aider les associations comme la vôtre à se moderniser et à mieux communiquer.
