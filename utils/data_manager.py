@@ -24,8 +24,19 @@ class DataManager:
             print("Aucune donnée à sauvegarder")
             return
         
-        # Obtenir les clés du premier élément pour les headers
-        fieldnames = data[0].keys()
+        # Obtenir toutes les clés possibles de tous les éléments
+        all_fieldnames = set()
+        for item in data:
+            all_fieldnames.update(item.keys())
+        
+        # Ordonner les champs
+        fieldnames = sorted(all_fieldnames)
+        
+        # S'assurer que tous les éléments ont tous les champs
+        for item in data:
+            for field in fieldnames:
+                if field not in item:
+                    item[field] = ''  # Valeur par défaut
         
         try:
             with open(filepath, 'w', newline='', encoding='utf-8') as csvfile:

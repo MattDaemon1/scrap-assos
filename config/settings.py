@@ -23,7 +23,7 @@ MAX_MEMBERS = 500
 MIN_YEAR = 2020
 
 # Régions prioritaires (codes départements)
-PRIORITY_REGIONS = [
+TARGET_DEPARTMENTS = [
     "18", "28", "36", "37", "41", "45",              # Centre-Val de Loire
     "69", "01", "07", "26", "38", "42", "73", "74",  # Auvergne-Rhône-Alpes
     "13", "04", "05", "06", "83", "84",              # PACA
@@ -31,9 +31,19 @@ PRIORITY_REGIONS = [
     "75", "77", "78", "91", "92", "93", "94", "95",  # Île-de-France
 ]
 
+PRIORITY_REGIONS = TARGET_DEPARTMENTS  # Alias pour compatibilité
+
 # Email settings
 EMAIL_PROVIDER = "sendgrid"  # ou "sendinblue"
 DAILY_EMAIL_LIMIT = 300
+EMAIL_SENDER_NAME = "Matthieu ALLART"
+EMAIL_SENDER_EMAIL = "matthieu@mattkonnect.com"
+
+# Configuration SMTP (à configurer selon votre fournisseur email)
+EMAIL_SERVER = "smtp.gmail.com"  # Remplacez par votre serveur SMTP
+EMAIL_PORT = 587
+EMAIL_USERNAME = "matthieu@mattkonnect.com"  # Votre email
+EMAIL_PASSWORD = ""  # À remplir avec votre mot de passe d'application
 
 # Google Sheets settings
 GOOGLE_SHEETS_ENABLED = True

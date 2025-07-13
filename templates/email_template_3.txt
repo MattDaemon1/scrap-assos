@@ -1,34 +1,15 @@
-Subject: [DERNIÈRE CHANCE] Site web {{nom_association}} - Maquette gratuite
+Objet : [DERNIER RAPPEL] Maquette offerte pour {{nom_association}}
 
-Bonjour,
+Bonjour {{prenom_contact}},
 
-C'est la dernière fois que je vous contacte concernant le site web de {{nom_association}}.
+Je me permets un dernier message concernant le site de {{nom_association}}.
 
-**Proposition finale :**
-🎁 Je crée une maquette GRATUITE de votre future page d'accueil
-🎁 Aucun engagement de votre part
-🎁 Vous visualisez le résultat avant de décider
+👉 Je propose de réaliser une maquette gratuite et personnalisée de votre page d’accueil, sans engagement. Cela vous permet de visualiser concrètement le potentiel d’un site modernisé.
 
-**Exemples de réalisations récentes :**
-• Association culturelle Orléans : +150% de visiteurs
-• Club de formation Tours : +50% d'inscriptions
-• Association caritative Blois : +200% de dons en ligne
+Si cela vous intéresse, il suffit de me le confirmer avant le {{date_limite}}.
+Sinon, je me permets de ne plus vous relancer par la suite.
 
-**Pourquoi cette proposition ?**
-Je démarre mon activité dans le {{departement}} et je souhaite constituer un portfolio local avec des associations satisfaites.
-
-**Il vous suffit de :**
-1. Répondre "OUI" à ce message
-2. Envoyer 3-4 photos de vos activités
-3. Recevoir votre maquette sous 48h
-
-Aucun frais, aucun engagement. Juste la possibilité de voir le potentiel de {{nom_association}} sur le web.
-
-Tentée par l'expérience ?
-
-Cordialement,
+Bien à vous,
 {{prenom}} {{nom}}
 {{telephone}} | {{email}}
-
----
-Si vous préférez ne plus recevoir de messages, répondez "STOP".
+{{site_web}}

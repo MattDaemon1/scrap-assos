@@ -60,7 +60,8 @@ class EmailCampaignManager:
             'nom': sender_info.get('nom', 'Dupont'),
             'telephone': sender_info.get('telephone', '06.XX.XX.XX.XX'),
             'email': sender_info.get('email', 'contact@example.com'),
-            'date_limite': (datetime.now() + timedelta(days=7)).strftime('%d/%m/%Y')
+            'date_limite': (datetime.now() + timedelta(days=7)).strftime('%d/%m/%Y'),
+            'prenom_contact': 'Matthieu'  # Prénom du contact pour MattKonnect
         }
         
         # Remplacer les variables dans le subject et body

@@ -1,60 +1,76 @@
-# Générateur de Leads pour Associations
+# RNA Campaign Sender
 
-Système automatisé de prospection d'associations françaises pour la création de sites web.
+Envoi d'emails de prospection aux associations officielles du département 01 (Ain).
+Données 100% réelles extraites du RNA (Répertoire National des Associations).
 
-## Fonctionnalités
+## 🎯 Fonctionnalités
 
-✅ **Scraping intelligent** des associations (Journal Officiel, HelloAsso)  
-✅ **Analyse automatique** des sites web existants  
-✅ **Génération de prospects qualifiés**  
-✅ **Campagnes email personnalisées**  
-✅ **Intégration Google Sheets** pour le suivi  
-✅ **Templates email professionnels**  
+- ✅ **6 contacts email réels** extraits du RNA officiel
+- ✅ **Associations vérifiées** du Journal Officiel  
+- ✅ **Envoi d'emails automatisé** avec personnalisation
+- ✅ **Mode test et production** intégré
+- ✅ **Template email professionnel** inclus
 
-## Installation rapide
+## 📧 Contacts Disponibles
 
+```
+1. accueil-laval@pl.chambagri.fr (Société de chasse - Saint-Benoit)
+2. asgym.villebois@gmail.com (Société de chasse - Villebois) 
+3. mairie@tenay.fr (Association de pêche - Tenay)
+4. thierco@orange.fr (Association chasse - Chazey-sur-Ain)
+5. contact@mairie-serriersdebriord.fr (Association pêche - Briord)
+6. contact@hautrhone-tourisme.fr (Association chasse - Seyssel)
+```
+
+## 🚀 Utilisation Rapide
+
+### 1. Envoyer un email de test
 ```bash
-# 1. Installer les dépendances
-pip install -r requirements.txt
-
-# 2. Configurer Google Sheets
-python setup_google_sheets.py
-
-# 3. Personnaliser vos informations
-# Éditez config/sender_config.txt avec vos coordonnées
-
-# 4. Lancer le générateur
-python main.py
+python rna_campaign_sender.py
+# Choisir option 1 pour test
 ```
 
-## Objectif
-Cibler des associations ayant :
-- Budget annuel : 10 000 € - 100 000 €
-- Taille : 50-500 membres
-- Secteurs : Éducation, Culture, Caritatif
-- Présence en ligne faible/obsolète
-- Activité récente (post-2020)
-
-## Structure du projet
-```
-├── scrapers/           # Scripts de scraping
-├── analyzers/          # Analyse des sites web
-├── email_manager/      # Gestion des campagnes
-├── utils/              # Google Sheets + utilitaires
-├── config/             # Configuration
-├── templates/          # Templates d'emails
-└── tests/              # Suite de tests
+### 2. Campagne complète
+```bash
+python rna_campaign_sender.py  
+# Choisir option 3 pour envoi réel
 ```
 
-## Workflow automatisé
+## 📁 Fichiers Importants
 
-1. **Scraping** : Extraction associations par département
-2. **Analyse** : Vérification qualité sites web
-3. **Qualification** : Export prospects avec besoin
-4. **Campagne** : Envoi emails personnalisés
-5. **Suivi** : Synchronisation Google Sheets
+- `rna_campaign_sender.py` - **Script principal d'envoi**
+- `data/rna_emails_clean_20250713_1608.csv` - **Contacts finaux**
+- `templates/email_template_rna_20250713_1608.txt` - **Template email**
+- `config/sender_config.txt` - **Configuration SMTP**
+- `send_real_email.py` - Script de test email simple
 
-## Objectif mensuel
-- 200-300 prospects scrapés
-- 100-150 prospects qualifiés  
-- 2-3 contrats/mois à 400€ = **800-1200€/mois**
+## ⚙️ Configuration SMTP
+
+Le fichier `config/sender_config.txt` contient :
+```
+SMTP_SERVER=mail.mattkonnect.com
+SMTP_PORT=465
+EMAIL_USER=votre_email@mattkonnect.com
+EMAIL_PASSWORD=votre_mot_de_passe
+```
+
+## 🔧 Scripts Disponibles
+
+### Core
+- `rna_campaign_sender.py` - Envoi de campagne email principal
+
+### Utilitaires  
+- `scrapers/rna_processor.py` - Traitement des données RNA
+- `scrapers/rna_contact_scraper.py` - Extraction de contacts
+- `scrapers/email_cleaner.py` - Nettoyage des emails
+
+### Test
+- `send_real_email.py` - Test rapide envoi email
+
+## 📊 Statistiques Actuelles
+
+- **654 associations** traitées du département 01
+- **70 associations** analysées pour contacts  
+- **6 emails valides** extraits (taux 8.5%)
+- **100% données officielles** du Journal Officiel
+- **Prêt pour campagne** immédiate

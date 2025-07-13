@@ -1,0 +1,27 @@
+# Fichiers de configuration sensibles
+config/google_credentials.json
+*.json
+.env
+
+# Données temporaires
+data/*.csv
+output/*.csv
+test_*/*.csv
+
+# Cache Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Environnement virtuel
+.venv/
+venv/
+.env.example
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
