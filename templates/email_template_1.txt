@@ -1,32 +1,32 @@
-Subject: Modernisez le site web de {{nom_association}}
+Objet : Et si {{nom_association}} avait un site web à son image ?
 
-Bonjour,
+Bonjour {{prenom_contact}},
 
-Je suis {{prenom}} {{nom}}, développeur web spécialisé dans la création de sites pour les associations.
+Je me permets de vous écrire car j'ai découvert les actions de {{nom_association}} dans le domaine {{secteur_detecte}} dans le {{departement}}. Félicitations pour votre engagement !
 
-J'ai remarqué que {{nom_association}} mène des actions importantes dans le domaine {{secteur_detecte}} dans le {{departement}}. 
+👉 Mais votre site reflète-t-il vraiment la qualité de votre travail ?
 
-**Pourquoi un nouveau site web ?**
-✓ Site moderne et responsive (mobile/tablette)
-✓ Conforme aux normes d'accessibilité RGAA
-✓ Optimisé pour Google (SEO)
-✓ Gestion facile des contenus
-✓ Sécurisé (HTTPS, sauvegardes)
+Aujourd’hui, un site web moderne et bien conçu peut :
+✅ Mieux valoriser vos actions et projets
+✅ Attirer plus d'adhérents et de partenaires
+✅ Faciliter la gestion des événements et des contacts
 
-**Mon offre pour les associations :**
-• Site vitrine complet : à partir de 400€
-• Formulaire de contact et adhésion
-• Galerie photos/événements
-• Formation à la gestion du site
-• 1 an de maintenance incluse
+Ce que je propose pour les associations comme la vôtre :
+🔹 Site vitrine clé en main à partir de 400€
+🔹 Design moderne, responsive (mobile/tablette)
+🔹 Accessible RGAA, optimisé SEO
+🔹 Formulaires d’adhésion et contact intégrés
+🔹 Formation offerte pour gérer votre site + 1 an de maintenance inclus
 
-**Exemples récents :** [lien portfolio]
+🎯 Des exemples concrets ? [Lien portfolio]
 
-Puis-je vous envoyer une proposition personnalisée pour {{nom_association}} ?
+Si cela vous intéresse, je peux vous préparer une proposition personnalisée, sans engagement.
 
-Cordialement,
+Une rapide discussion ? Répondez simplement à ce mail ou appelez-moi au {{telephone}}.
+
+Au plaisir d’échanger,
+
 {{prenom}} {{nom}}
 {{telephone}} | {{email}}
 
----
-P.S: Réponse rapide sous 24h. Devis gratuit et sans engagement.
+P.S. Réponse garantie sous 24h. Devis gratuit, sans engagement.

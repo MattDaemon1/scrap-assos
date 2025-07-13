@@ -1,31 +1,38 @@
-Subject: [SUIVI] Site web pour {{nom_association}} - Réduction de lancement
+Objet : [SUIVI] Modernisation du site de {{nom_association}} — Offre réservée jusqu’au {{date_limite}}
 
-Bonjour,
+Bonjour {{prenom_contact}},
 
-J'espère que vous allez bien. Je reviens vers vous concernant la modernisation du site web de {{nom_association}}.
+Je reviens vers vous car j’ai réfléchi à une offre vraiment adaptée à {{nom_association}}.
 
-**Offre spéciale pour les associations du {{departement}} :**
-🎯 Site web complet : 350€ au lieu de 400€ (jusqu'au {{date_limite}})
-🎯 Mise en ligne en 10 jours
-🎯 Formation personnalisée incluse
+En discutant récemment avec d'autres associations du {{departement}}, un constat revient souvent :
 
-**Ce qui est inclus :**
-• Design moderne et professionnel
-• Compatible tous appareils
-• Hébergement sécurisé 1 an
-• Référencement Google de base
-• Maintenance technique
+“Notre site est trop vieux, il ne reflète plus notre image, et sur mobile… c’est compliqué.”
 
-**Pourquoi maintenant ?**
-Plus de 80% des visiteurs consultent les sites sur mobile. Un site obsolète peut faire perdre des adhérents ou des dons.
+C’est justement pour ça que je propose en ce moment une offre spéciale réservée aux associations locales :
 
-Souhaitez-vous que je prépare une maquette gratuite pour {{nom_association}} ?
+🎯 Site vitrine clé en main à 350€ (au lieu de 400€)
+👉 Mise en ligne en 10 jours
+👉 Formation personnalisée incluse
 
-Réponse attendue avant le {{date_limite}} pour bénéficier de cette réduction.
+Ce que j’intègre pour {{nom_association}} :
 
-Cordialement,
+Design sur mesure qui reflète vos valeurs
+
+Compatible mobile et tablette (80% des visiteurs !)
+
+Sécurité + hébergement 1 an inclus
+
+Référencement Google pour être mieux trouvé localement
+
+Maintenance technique pendant 12 mois
+
+Et surtout :
+➡️ Maquette personnalisée gratuite avant engagement, pour que vous puissiez vous projeter.
+
+Si cela vous intéresse, il suffit de me répondre avant le {{date_limite}} pour que je vous prépare un aperçu.
+
+Au plaisir d’échanger,
 {{prenom}} {{nom}}
 {{telephone}} | {{email}}
 
----
-Si ce message ne vous intéresse pas, répondez "STOP" et je ne vous recontacterai plus.
+P.S. Si vous avez déjà refait votre site récemment ou si ce message ne vous concerne pas, un simple « STOP » et je ne vous relancerai plus.
