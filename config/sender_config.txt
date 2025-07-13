@@ -1,5 +1,5 @@
 # Configuration de l'expéditeur
-# Modifiez ces informations avant d'utiliser le système d'envoi
+
 
 [SENDER_INFO]
 prenom = Matthieu
