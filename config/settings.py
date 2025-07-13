@@ -39,6 +39,12 @@ DAILY_EMAIL_LIMIT = 300
 EMAIL_SENDER_NAME = "Matthieu ALLART"
 EMAIL_SENDER_EMAIL = "matthieu@mattkonnect.com"
 
+# Configuration SMTP (à configurer selon votre fournisseur email)
+EMAIL_SERVER = "smtp.gmail.com"  # Remplacez par votre serveur SMTP
+EMAIL_PORT = 587
+EMAIL_USERNAME = "matthieu@mattkonnect.com"  # Votre email
+EMAIL_PASSWORD = ""  # À remplir avec votre mot de passe d'application
+
 # Google Sheets settings
 GOOGLE_SHEETS_ENABLED = True
 GOOGLE_CREDENTIALS_FILE = "config/google_credentials.json"
